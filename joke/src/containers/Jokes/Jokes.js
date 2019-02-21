@@ -1,4 +1,5 @@
 import React, {Component, Fragment} from 'react';
+import './Jokes.css'
 import ChuckNorris from "../../components/ChuckNorris/ChuckNorris";
 
 class Jokes extends Component {
@@ -24,7 +25,7 @@ class Jokes extends Component {
     render(){
         return (
             <Fragment>
-                <div>
+                <div className='container'>
                     <ChuckNorris
                         text={this.state.jokes}
                     />
